@@ -1,0 +1,255 @@
+:root {
+    --AlmostBlack: #1A1126;
+    --NotDarkBlue: #150F40;
+    --MediumBlue: #33214A;
+    --stylishPink: #D91A73;
+    --TransRed: #d91a7355;
+    --Pastel: #D9415D;
+    --SoftRed: #D98989;
+    --NiceWhite: #F2F2F2;
+    --shadow: rgba(0, 0, 0, 0.397);
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 15px;
+  }
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: var(--AlmostBlack);
+  }
+::-webkit-scrollbar-thumb {
+    background-color:var(--stylishPink);
+    border-radius: 10px;
+  }
+
+::selection {
+    background-color: var(--Pastel);
+    color: var(--AlmostBlack);
+}
+
+html {
+    background-color: var(--AlmostBlack);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.DefaultCursor {
+    cursor: unset !important;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* search bar */
+
+#content_wrapper {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    display: block;
+    margin-top: 10vh;
+}
+
+.title_wrapper {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+.title_wrapper>h1 {
+    color: var(--Pastel);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.title_wrapper img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15vw;
+    height: 15vw;
+}
+
+
+
+#anime_search {
+    position: relative;
+    width: 70%;
+    left: 12.5%;
+    height: 4vh;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: var(--MediumBlue);
+    box-shadow: 0 5px 20px var(--shadow);
+    border-width:0px;
+    border:none !important;
+    font-size: 1.2rem;
+    color: var(--NiceWhite);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: 0;
+    transition: box-shadow 1.5s;
+}
+#anime_search:focus {
+    outline: 0;
+    box-shadow: 0 0 20px var(--MediumBlue);
+    transition: box-shadow 0.5s;
+}
+#anime_search::placeholder {
+    color: var(--NiceWhite);
+    opacity: .2;
+}
+
+#nsfwCheck {
+    margin-top: 2%;
+    position: relative;
+    left: 25%;
+}
+
+#checkLabel{
+    position: relative;
+    color: var(--NiceWhite);
+    left: 25%;
+    text-align: center;
+}
+
+/* body */
+
+
+
+.temp_text {
+    color: white;
+}
+
+#episodesList {
+    display: block;
+    position: relative;
+    max-width: 50%;
+}
+
+.episodes {
+    position: relative;
+    padding: 2px;
+    text-decoration: none;
+    color: var(--NiceWhite);
+}
+
+/* serien liste */
+
+#seriesList {
+    position: relative;
+    height: fit-content;
+    width: 80%;
+    left: 10%;
+    margin-top: 5%;
+}
+
+.list_entry {
+    position: relative;
+    background-color: var(--SoftRed);
+    width: 100%;
+    height: fit-content;
+    border-radius: 30px;
+    padding: 0.5rem;
+    margin-bottom: 1.5vh;
+    transition: box-shadow .45s, background-color .3s;
+}
+.list_entry:hover {
+    background-color: var(--Pastel);
+    box-shadow: 0 5px 15px var(--shadow);
+    transition: box-shadow .15s, background-color .2s;
+}
+.entry_title {
+    position: inherit;
+    color: var(--AlmostBlack);
+    left: 2%;
+}
+
+.number_of_episodes {
+    position: inherit;
+    color: var(--NotDarkBlue);
+    left: 3%;
+    margin-right: 0.5rem;
+}
+
+.source {
+    position: inherit;
+    float: right;
+    color: var(--NotDarkBlue);
+    right: 2%;
+}
+
+/* loading */
+
+#loadingAnimationWrapper {
+    z-index: 100;
+    display: block;
+    margin-top: 35vh;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 60vw;
+    height: 30vh;
+    border-radius: 30px;
+    background-color: var(--MediumBlue);
+    box-shadow: 0 3px 20px var(--shadow);
+}
+
+#loadingText {
+    margin-top: 5%;
+    display: block;
+    position: relative;
+    color: var(--stylishPink);
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 0 0 10px var(--TransRed);
+}
+
+#loadingBarWrapper {
+    margin-top: 2%;
+    border-radius: 100px;
+    position: relative;
+    background-color: var(--AlmostBlack);
+    width: 80%;
+    height: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#loadingBar {
+
+    background-color: var(--stylishPink);
+    animation: load 2.3s normal forwards;
+    border-radius: inherit;
+    height: inherit;
+    width: 0;
+    box-shadow: 0 0 20px var(--TransRed);
+}
+
+@keyframes load {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+
+
+
+@media screen and (max-width: 1400px) {
+    .title_wrapper img {
+        width: 20vh;
+        height: 20vh;
+    }
+
+}

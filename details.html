@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>[Anime Name]</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.typekit.net/ios7bhb.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/loading.css">
+        <link rel="stylesheet" href="css/details.css">
+        <link rel="stylesheet" href="/dashboardV2/css/fonts.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+    <body onload="drawDetails();">
+
+        <button id="backBTN" class="mont_light pointer" onclick="window.open('index.html', '_self');">Zurück</button>
+
+        <div id="image"></div>
+        
+        <div id="contentWrapper">
+
+            <div id="titleWrapper"></div>
+            
+            <div id="lowerWrapper">
+                <img id="coverImage">
+                <div id="AnimeTags" class="DefaultCursor"></div>
+                <div id="description" class=" mont_reg"></div>
+                <div id="gridContainer"></div>
+            </div>
+            
+        </div>
+
+        <script src="script.js" async defer></script>
+    </body>
+</html>
