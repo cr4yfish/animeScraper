@@ -1,5 +1,5 @@
 # animeScraper
-Only for tetsing purposes. Do not actually use.
+Disclaimer: Only for tetsing purposes. Do not actually use.
 
 Hello everyone!
 
