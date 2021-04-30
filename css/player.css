@@ -1,0 +1,33 @@
+:root {
+    --AlmostBlack: #1A1126;
+    --NotDarkBlue: #150F40;
+    --MediumBlue: #33214A;
+    --stylishPink: #D91A73;
+    --TransRed: #d91a7355;
+    --Pastel: #D9415D;
+    --SoftRed: #D98989;
+    --NiceWhite: #F2F2F2;
+    --shadow: rgba(0, 0, 0, 0.397);
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#player_wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    width: 90%;
+    height: 90%;
+}
+
+#player_frame {
+    position: relative;
+    border: none;
+    box-shadow: 0 0 10px var(--shadow);
+    border-radius: 10px;
+}
