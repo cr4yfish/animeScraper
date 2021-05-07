@@ -230,7 +230,6 @@ body {
 }
 
 #loadingBar {
-
     background-color: var(--stylishPink);
     animation: load 2.3s normal forwards;
     border-radius: inherit;
@@ -242,8 +241,7 @@ body {
 @keyframes load {
     0% { width: 0; }
     100% { width: 100%; }
-  }
-
+}
 
 
 @media screen and (max-width: 1400px) {
