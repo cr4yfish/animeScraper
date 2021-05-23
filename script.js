@@ -361,7 +361,9 @@ async function drawDetails() {
 
         clone = episodesList.cloneNode();
         clone.textContent = "Episode " +  (index + 1);
-        clone.setAttribute("onclick", "window.open(" + "'" + episode + "', '_blank'" + "); ");
+        // remove comment for working episode
+        //clone.setAttribute("onclick", "window.open(" + "'" + episode + "', '_blank'" + "); ");
+        clone.setAttribute("onclick", "window.open(https://www.google.com); ");
         clone.setAttribute("class", "gridItem mont_light pointer");
         episodesList.appendChild(clone);
     }); 

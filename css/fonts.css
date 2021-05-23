@@ -1,0 +1,29 @@
+.mont_light {
+    font-family: montserrat, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.mont_italic {
+    font-family: montserrat, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.mont_reg {
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mont_semiBold {
+    font-family: montserrat, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.cortado_reg {
+    font-family: cortado, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
